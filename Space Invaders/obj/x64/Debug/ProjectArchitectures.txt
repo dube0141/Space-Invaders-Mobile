@@ -1,0 +1,1 @@
+C:\Users\Gabriel\documents\visual studio 2015\Projects\Space Invaders\Space Invaders\Space Invaders.csproj;x64
