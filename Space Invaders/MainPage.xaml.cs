@@ -18,9 +18,11 @@ namespace Space_Invaders
     public sealed partial class MainPage : Page
     {
         private DispatcherTimer dispatcherTimer;
-
+        
         private Player player;
         private Invaders invaders;
+
+        private ushort playerLives;
 
         public MainPage()
         {
@@ -29,7 +31,9 @@ namespace Space_Invaders
             player = new Player(canvas);
             invaders = new Invaders(canvas);
 
-            dispatcherTimer = new DispatcherTimer();
+            playerLives = 3;
+
+        dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += Game;
             dispatcherTimer.Interval = TimeSpan.FromTicks(TimeSpan.TicksPerSecond / 30);
             dispatcherTimer.Start();
@@ -39,13 +43,34 @@ namespace Space_Invaders
         {   
             if(!invaders.playerAlive())
             {
+                switch (playerLives)
+                {
+                    case 3:
+                        life3.Visibility = Visibility.Collapsed;
+                        invaders.setPlayerAlive(true);
+                        break;
+                    case 2:
+                        life2.Visibility = Visibility.Collapsed;
+                        invaders.setPlayerAlive(true);
+                        break;
+                    case 1:
+                        life1.Visibility = Visibility.Collapsed;
+                        dispatcherTimer.Stop();
+                        gameOverPanel.Visibility = Visibility.Visible;
+                        invaders = new Invaders(canvas);
+                        return;
+                }
+
+                playerLives--;
                 canvas.Children.Clear();
+                invaders.rebuildInvaders(canvas);
                 player = new Player(canvas);
-                invaders = new Invaders(canvas);
-                return;
             }
+            
             invaders.Draw(canvas, player.getPlayer());
             player.Draw(canvas, invaders.getInvaderGrid());
+
+            scoreBlock.Text = player.getScore().ToString();
         }
     }
 }

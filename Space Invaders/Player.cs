@@ -13,17 +13,29 @@ namespace Space_Invaders
         private Image playerSprite;
         private Image playerBullet;
 
+
         private BitmapImage playerBitmapImage = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/player.png"));
         private BitmapImage invaderKilledImage = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/explosion.png"));
+        private BitmapImage alien1A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-1.png"));
+        private BitmapImage alien1B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-2.png"));
+        private BitmapImage alien2A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-1.png"));
+        private BitmapImage alien2B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-2.png"));
+        private BitmapImage alien3A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-1.png"));
+        private BitmapImage alien3B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-2.png"));
 
         private bool isMovingLeft;
         private bool isMovingRight;
         private bool isShooting;
 
+        public int playerScore;
+
+
         public Player(Canvas canvas)
         {
             Window.Current.CoreWindow.KeyDown += onKeyDown;
             Window.Current.CoreWindow.KeyUp += onKeyUp;
+
+            playerScore = 0;
 
             playerSprite = new Image();
             playerBitmapImage.ImageOpened += (sender, e) =>
@@ -75,11 +87,24 @@ namespace Space_Invaders
                             {
                                 if (invaderGrid[r, c].Tag != null)
                                 {
+
+                                    playerScore = playerScore + (10 * (invaderGrid.GetLength(1) - c));
+
+                                    if (invaderGrid[r, c].Source == alien1A || invaderGrid[r, c].Source == alien1B) playerScore = playerScore + 100;
+                                    else if (invaderGrid[r, c].Source == alien2A || invaderGrid[r, c].Source == alien2B) playerScore = playerScore + 50;
+                                    else playerScore = playerScore + 25;
+
+
+
+
                                     isShooting = false;
                                     invaderGrid[r, c].Tag = null;
 
                                     canvas.Children.Remove(playerBullet);
                                     removeKilled(canvas, invaderGrid[r, c]);
+
+
+                                    
                                 }
                             }
                         }
@@ -120,6 +145,11 @@ namespace Space_Invaders
         public Image getPlayer()
         {
             return playerSprite;
+        }
+
+        public int getScore()
+        {
+            return playerScore;
         }
     }
 }

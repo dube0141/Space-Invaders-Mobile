@@ -16,6 +16,7 @@ namespace Space_Invaders
         private bool isMovingDown;
         private bool toggleSprite;
         private bool isShooting;
+        private bool isPlayerAlive;
 
         private int count;
         private int speed;
@@ -39,6 +40,7 @@ namespace Space_Invaders
 
             isMovingLeft = invadersAreMoving = isMovingDown = toggleSprite = false;
             isShooting = true;
+            isPlayerAlive = true;
             speed = count = 0;
 
             for (int c = 0; c < columns; c++)
@@ -146,6 +148,7 @@ namespace Space_Invaders
                             if (Canvas.GetTop(player) + player.Height >= Canvas.GetTop(invaderBullets[i]) && Canvas.GetTop(player) <= Canvas.GetTop(invaderBullets[i]))
                             {
                                 isShooting = false;
+                                setPlayerAlive(false);
                             }
                         }
                         else if (Canvas.GetTop(invaderBullets[i]) >= Window.Current.Bounds.Height - invaderBullets[i].Height)
@@ -213,7 +216,21 @@ namespace Space_Invaders
 
         public bool playerAlive()
         {
-            return isShooting;
+            return isPlayerAlive;
+        }
+        public void setPlayerAlive(bool status)
+        {
+            isPlayerAlive = status;
+        }
+        public void rebuildInvaders(Canvas canvas)
+        {
+            for (int c = 0; c < columns; c++)
+            {
+                for (int r = 0; r < rows; r++)
+                {
+                    canvas.Children.Add(invaderGrid[c,r]);
+                }
+            }
         }
     }
 }
