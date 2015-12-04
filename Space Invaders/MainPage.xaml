@@ -48,7 +48,7 @@
                 FontSize="25"
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Center"
-                RequestedTheme="Light" FontFamily="Fonts/space_invaders.ttf#Space Invaders"/>
+                RequestedTheme="Light" FontFamily="Fonts/space_invaders.ttf#Space Invaders" Click="submitScoreBtn_Click"/>
         </StackPanel>
 
     </Grid>

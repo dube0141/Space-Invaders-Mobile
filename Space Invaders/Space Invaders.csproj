@@ -94,6 +94,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Assets\Sprites\icon.psd" />
+    <Content Include="Assets\Audio\explosion.wav" />
+    <Content Include="Assets\Audio\gameover.mp3" />
+    <Content Include="Assets\Audio\invaderkilled.wav" />
     <Content Include="Fonts\space_invaders.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -109,6 +112,7 @@
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sounds.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

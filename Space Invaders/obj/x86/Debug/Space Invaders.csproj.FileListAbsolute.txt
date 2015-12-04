@@ -953,3 +953,9 @@ C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space 
 C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Fonts\space_invaders.ttf
 C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Fonts\space_invaders.ttf
 C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\obj\x86\Debug\Core\Fonts\space_invaders.ttf
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Audio\explosion.wav
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Audio\gameover.mp3
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Audio\invaderkilled.wav
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\obj\x86\Debug\Core\Assets\Audio\explosion.wav
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\obj\x86\Debug\Core\Assets\Audio\invaderkilled.wav
+C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\obj\x86\Debug\Core\Assets\Audio\gameover.mp3

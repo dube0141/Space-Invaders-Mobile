@@ -27,15 +27,15 @@ namespace Space_Invaders
         private bool isMovingRight;
         private bool isShooting;
 
-        public int playerScore;
+        private int playerScore;
 
 
-        public Player(Canvas canvas)
+        public Player(Canvas canvas, int playerGameScore)
         {
             Window.Current.CoreWindow.KeyDown += onKeyDown;
             Window.Current.CoreWindow.KeyUp += onKeyUp;
 
-            playerScore = 0;
+            playerScore = playerGameScore;
 
             playerSprite = new Image();
             playerBitmapImage.ImageOpened += (sender, e) =>
@@ -53,7 +53,7 @@ namespace Space_Invaders
             canvas.Children.Add(playerSprite);
         }
 
-        public void Draw(Canvas canvas, Image[,] invaderGrid)
+        public void Draw(Canvas canvas, Image[,] invaderGrid, Sounds sounds)
         {
             Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
 
@@ -74,6 +74,7 @@ namespace Space_Invaders
                     Canvas.SetTop(playerBullet, Canvas.GetTop(playerSprite));
                     Canvas.SetLeft(playerBullet, Canvas.GetLeft(playerSprite) + (playerSprite.Width / 2 - 1));
 
+                    sounds.playPlayerShootSound();
                     canvas.Children.Add(playerBullet);
                 }
                 //Move bullet upward and check for alienGrid collision.
@@ -95,16 +96,12 @@ namespace Space_Invaders
                                     else playerScore = playerScore + 25;
 
 
-
-
                                     isShooting = false;
                                     invaderGrid[r, c].Tag = null;
-
+                                    sounds.playinvaderKilledSound();
                                     canvas.Children.Remove(playerBullet);
                                     removeKilled(canvas, invaderGrid[r, c]);
 
-
-                                    
                                 }
                             }
                         }
@@ -151,5 +148,7 @@ namespace Space_Invaders
         {
             return playerScore;
         }
+
+
     }
 }

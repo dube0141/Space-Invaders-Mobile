@@ -24,16 +24,8 @@ namespace Space_Invaders
         private int columns = Convert.ToInt32(Window.Current.Bounds.Width / 120);
         private int rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
 
-        MediaElement BackgroundMusic;
-
         public Invaders(Canvas canvas)
         {
-            BackgroundMusic = new MediaElement();
-            BackgroundMusic.Source = new Uri("ms-appx:///Assets/Audio/01-opening-theme.mp3");
-            BackgroundMusic.AutoPlay = true;
-            canvas.Children.Add(BackgroundMusic);
-            BackgroundMusic.Volume = 0.2;
-            BackgroundMusic.Play();
 
             invaderGrid = new Image[columns, rows];
             invaderBullets = new Image[3];
@@ -81,7 +73,7 @@ namespace Space_Invaders
             }
         }
 
-        public void Draw(Canvas canvas, Image player)
+        public void Draw(Canvas canvas, Image player, Sounds sounds)
         {
             if (count % 15 == 1) toggleSprite = invadersAreMoving = true;
             if (count % 20 == 1 && new Random().Next(0, 3) == 2) invaderShoot(canvas, player);
@@ -147,6 +139,7 @@ namespace Space_Invaders
                         {
                             if (Canvas.GetTop(player) + player.Height >= Canvas.GetTop(invaderBullets[i]) && Canvas.GetTop(player) <= Canvas.GetTop(invaderBullets[i]))
                             {
+                                sounds.playPlayerKilledSound();
                                 isShooting = false;
                                 setPlayerAlive(false);
                             }
@@ -221,6 +214,7 @@ namespace Space_Invaders
         public void setPlayerAlive(bool status)
         {
             isPlayerAlive = status;
+            isShooting = status;
         }
         public void rebuildInvaders(Canvas canvas)
         {
@@ -228,6 +222,7 @@ namespace Space_Invaders
             {
                 for (int r = 0; r < rows; r++)
                 {
+                    if (invaderGrid[c, r].Tag != null)
                     canvas.Children.Add(invaderGrid[c,r]);
                 }
             }
