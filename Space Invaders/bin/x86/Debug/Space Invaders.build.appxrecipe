@@ -94,6 +94,9 @@
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\player.png">
       <PackagePath>Assets\Sprites\player.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spacedust1.jpg">
+      <PackagePath>Assets\Sprites\spacedust1.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spaceinvaders.jpg">
       <PackagePath>Assets\Sprites\spaceinvaders.jpg</PackagePath>
     </AppxPackagedFile>

@@ -21,12 +21,13 @@ namespace Space_Invaders
         private int count;
         private int speed;
         private int randomColumn;
-        private int columns = Convert.ToInt32(Window.Current.Bounds.Width / 120);
-        private int rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
+        private int columns;
+        private int rows;
 
         public Invaders(Canvas canvas)
         {
 
+            createRowsAndColumns();
             invaderGrid = new Image[columns, rows];
             invaderBullets = new Image[3];
 
@@ -44,27 +45,30 @@ namespace Space_Invaders
 
                     if (r < 1)
                     {
-                        invader.Height = 24;
+                        invader.Height = 24 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-1.png"));
                     }
                     else if (r < 3)
                     {
-                        invader.Height = 28;
+                        invader.Height = 28 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-1.png"));
                     }
                     else
                     {
-                        invader.Height = 32;
+                        invader.Height = 32 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-1.png"));
                     }
 
-                    Canvas.SetLeft(invader, 50 + (50 * c));
-                    Canvas.SetTop(invader, 50 + (50 * r));
 
-                    invader.Width = 32;
+
+                    Canvas.SetLeft(invader, 32 + (50 * c));
+                    if (rows * 32 >= Window.Current.Bounds.Height / 2) Canvas.SetTop(invader, -((rows * 32) - 64) + (50 * r));
+                    else Canvas.SetTop(invader, 32 + (50 * r));
+
+                    invader.Width = 32 * sizeModifier();
                     invader.Source = bitmapSource;
 
                     canvas.Children.Add(invader);
@@ -149,7 +153,7 @@ namespace Space_Invaders
                             canvas.Children.Remove(invaderBullets[i]);
                         }
 
-                        Canvas.SetTop(invaderBullets[i], Canvas.GetTop(invaderBullets[i]) + 5);
+                        Canvas.SetTop(invaderBullets[i], Canvas.GetTop(invaderBullets[i]) + 15);
                     }
                 }
             }
@@ -200,6 +204,21 @@ namespace Space_Invaders
                 invader.Tag = oldImage;
                 invader.Source = newImage;
             }
+        }
+
+        private void createRowsAndColumns()
+        {
+            columns = Convert.ToInt32(Window.Current.Bounds.Width / 80);
+            rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
+
+            while (columns * rows <= 50) rows++;
+        }
+
+        private double sizeModifier()
+        {
+            if (Window.Current.Bounds.Width <= 300) return 0.5;
+            else if (Window.Current.Bounds.Width <= 500) return 0.8;
+            else return 1;
         }
 
         public Image[,] getInvaderGrid()

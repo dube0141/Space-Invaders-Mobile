@@ -36,18 +36,16 @@ namespace Space_Invaders
             Window.Current.CoreWindow.KeyUp += onKeyUp;
 
             playerScore = playerGameScore;
+            isMovingLeft = isMovingRight = isShooting = false;
+
 
             playerSprite = new Image();
-            playerBitmapImage.ImageOpened += (sender, e) =>
-            {
-                isMovingLeft = isMovingRight = isShooting = false;
+            playerSprite.Width = 52 * sizeModifier();
+            playerSprite.Height = 32 * sizeModifier();
 
-                playerSprite.Width = playerBitmapImage.PixelWidth;
-                playerSprite.Height = playerBitmapImage.PixelHeight;
-
-                Canvas.SetLeft(playerSprite, Window.Current.Bounds.Width / 2);
-                Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
-            };
+            Canvas.SetLeft(playerSprite, Window.Current.Bounds.Width / 2);
+            Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
+            
 
             playerSprite.Source = playerBitmapImage;
             canvas.Children.Add(playerSprite);
@@ -57,8 +55,8 @@ namespace Space_Invaders
         {
             Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
 
-            if (isMovingLeft) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 5);
-            if (isMovingRight) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) + 5);
+            if (isMovingLeft && Canvas.GetLeft(playerSprite)>= 0) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 6);
+            if (isMovingRight && Canvas.GetLeft(playerSprite) <= Window.Current.Bounds.Width - playerSprite.Width) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) + 6);
             if (isShooting)
             {
                 //If no bullet is found, create a new one.
@@ -66,8 +64,8 @@ namespace Space_Invaders
                 {
                     playerBullet = new Image();
 
-                    playerBullet.Width = 3;
-                    playerBullet.Height = 8;
+                    playerBullet.Width = 3 * sizeModifier();
+                    playerBullet.Height = 8 * sizeModifier();
 
                     playerBullet.Source = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/player-bullet.png"));
 
@@ -130,6 +128,13 @@ namespace Space_Invaders
         {
             if (args.VirtualKey == Windows.System.VirtualKey.Left) isMovingLeft = false;
             if (args.VirtualKey == Windows.System.VirtualKey.Right) isMovingRight = false;
+        }
+
+        private double sizeModifier()
+        {
+            if (Window.Current.Bounds.Width <= 300) return 0.5;
+            else if (Window.Current.Bounds.Width <= 500) return 0.8;
+            else return 1;
         }
 
         private async void removeKilled(Canvas canvas, Image invader)
