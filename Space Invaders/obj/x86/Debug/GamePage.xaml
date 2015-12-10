@@ -8,36 +8,65 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='1' x:Name="grid" Background="Black">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='2' x:Name="desktopView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='3' x:Name="mobileView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gameOverText.FontSize" Value="40"/>
+                        <Setter Target="scoreText.FontSize" Value="15"/>
+                        <Setter Target="scoreText.Margin" Value="10,0"/>
+                        <Setter Target="scoreBlock.FontSize" Value="15"/>
+                        <Setter Target="livesText.FontSize" Value="15"/>
+                        <Setter Target="livesText.Margin" Value="10,0"/>
+                        <Setter Target="life1.Width" Value="20"/>
+                        <Setter Target="life1.Height" Value="20"/>
+                        <Setter Target="life2.Width" Value="20"/>
+                        <Setter Target="life2.Height" Value="20"/>
+                        <Setter Target="life3.Width" Value="20"/>
+                        <Setter Target="life3.Height" Value="20"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
 
-        <Grid x:ConnectionId='2' x:Name="gameTopBar" HorizontalAlignment="Stretch">
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:ConnectionId='4' x:Name="gameTopBar" HorizontalAlignment="Stretch">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.05*"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0">
-                <TextBlock x:ConnectionId='14' x:Name="scoreText" FontSize="20" Width="auto" Text="SCORE" Canvas.ZIndex="9" Margin="25,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="auto" Foreground="Yellow"
+                <TextBlock x:ConnectionId='16' x:Name="scoreText" FontSize="20" Width="auto" Text="SCORE" Canvas.ZIndex="9" Margin="25,0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="auto" Foreground="Yellow"
                 FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
-                <TextBlock x:ConnectionId='15' x:Name="scoreBlock" FontSize="20" Width="auto" Text="000" Canvas.ZIndex="9" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="auto" Foreground="Yellow"
+                <TextBlock x:ConnectionId='17' x:Name="scoreBlock" FontSize="20" Width="auto" Text="000" Canvas.ZIndex="9" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Height="auto" Foreground="Yellow"
                 FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Image x:ConnectionId='10' x:Name="life1" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0"/>
-                <Image x:ConnectionId='11' x:Name="life2" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0"/>
-                <Image x:ConnectionId='12' x:Name="life3" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0,0,0"/>
-                <TextBlock x:ConnectionId='13' x:Name="livesText" FontSize="20" Width="auto" Text="LIVES" Canvas.ZIndex="9" Margin="25,0" VerticalAlignment="Center" HorizontalAlignment="Right" Height="auto" Foreground="Yellow"
+                <Image x:ConnectionId='12' x:Name="life1" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0"/>
+                <Image x:ConnectionId='13' x:Name="life2" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0"/>
+                <Image x:ConnectionId='14' x:Name="life3" Source="ms-appx:///Assets/sprites/player.png" Height="30" Width="30" Margin="5,0,0,0"/>
+                <TextBlock x:ConnectionId='15' x:Name="livesText" FontSize="20" Width="auto" Text="LIVES" Canvas.ZIndex="9" Margin="25,0" VerticalAlignment="Center" HorizontalAlignment="Right" Height="auto" Foreground="Yellow"
                 FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
             </StackPanel>
         </Grid>
 
-        <Canvas x:ConnectionId='3' x:Name="canvas" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="{Binding ElementName=grid, Path=ActualWidth}" Height="{Binding ElementName=grid, Path=ActualHeight}"></Canvas>
+        <Canvas x:ConnectionId='5' x:Name="canvas" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="{Binding ElementName=grid, Path=ActualWidth}" Height="{Binding ElementName=grid, Path=ActualHeight}"></Canvas>
 
-        <StackPanel x:ConnectionId='4' x:Name="gameOverPanel" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="5" Background="Black" BorderBrush="Yellow" Visibility="Collapsed">
-            <TextBlock x:ConnectionId='5' x:Name="gameOverText" Text="Game Over" Margin="20" Foreground="Yellow" FontSize="70" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
-            <TextBlock x:ConnectionId='6' x:Name="finalScoreText" Text="Score" Margin="0" Foreground="Yellow" HorizontalAlignment="Center" FontSize="20" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
-            <TextBlock x:ConnectionId='7' x:Name="finalScoreBlock" Text="723413" Margin="0" Foreground="Yellow" HorizontalAlignment="Center" FontSize="40" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
-            <TextBox x:ConnectionId='8' x:Name="playerName" PlaceholderText="Player name" Margin="20,0" HorizontalContentAlignment="Center" Foreground="Yellow" FontSize="25" FontFamily="Fonts/space_invaders.ttf#Space Invaders" Background="Black" BorderBrush="Yellow" SelectionHighlightColor="Yellow"/>
-            <Button x:ConnectionId='9' x:Name="submitScoreBtn" 
+        <StackPanel x:ConnectionId='6' x:Name="gameOverPanel" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="5" Background="Black" BorderBrush="Yellow" Visibility="Collapsed">
+            <TextBlock x:ConnectionId='7' x:Name="gameOverText" Text="Game Over" Margin="20" Foreground="Yellow" FontSize="70" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
+            <TextBlock x:ConnectionId='8' x:Name="finalScoreText" Text="Score" Margin="0" Foreground="Yellow" HorizontalAlignment="Center" FontSize="20" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
+            <TextBlock x:ConnectionId='9' x:Name="finalScoreBlock" Text="723413" Margin="0" Foreground="Yellow" HorizontalAlignment="Center" FontSize="40" FontFamily="Fonts/space_invaders.ttf#Space Invaders" />
+            <TextBox x:ConnectionId='10' x:Name="playerName" PlaceholderText="Player name" MaxLength="10" Margin="20,0" HorizontalContentAlignment="Center" Foreground="Yellow" FontSize="25" FontFamily="Fonts/space_invaders.ttf#Space Invaders" Background="Black" BorderBrush="Yellow" SelectionHighlightColor="Yellow"/>
+            <Button x:ConnectionId='11' x:Name="submitScoreBtn" 
                 VerticalContentAlignment="Bottom"
                 HorizontalContentAlignment="Center"
                 Content=" Submit Score" 

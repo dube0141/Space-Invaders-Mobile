@@ -79,8 +79,8 @@ namespace Space_Invaders
 
         public void Draw(Canvas canvas, Image player, Sounds sounds)
         {
-            if (count % 15 == 1) toggleSprite = invadersAreMoving = true;
-            if (count % 20 == 1 && new Random().Next(0, 3) == 2) invaderShoot(canvas, player);
+            if (count % (15 - speed) == 1) toggleSprite = invadersAreMoving = true;
+            if (count % (20 - speed) == 1 && new Random().Next(0, 3) == 2) invaderShoot(canvas, player);
             if (isMovingDown)
             {
                 for (int c = 0; c < columns; c++)
@@ -101,14 +101,17 @@ namespace Space_Invaders
                     {
                         for (int r = 0; r < rows; r++)
                         {
-                            if (toggleSprite) toggle(invaderGrid[c, r]);
-                            if (Canvas.GetLeft(invaderGrid[c, r]) <= 0 + (invaderGrid[c, r].Width * 2))
+                            if (invaderGrid[c, r].Tag != null)
                             {
-                                isMovingDown = true;
-                                isMovingLeft = false;
-                            }
+                                if (toggleSprite) toggle(invaderGrid[c, r]);
+                                if (Canvas.GetLeft(invaderGrid[c, r]) <= 0 + (invaderGrid[c, r].Width * 2))
+                                {
+                                    isMovingDown = true;
+                                    isMovingLeft = false;
+                                }
 
-                            Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) - 20);
+                                Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) - (20 + speed));
+                            }
                         }
                     }
                 }
@@ -118,14 +121,17 @@ namespace Space_Invaders
                     {
                         for (int r = 0; r < rows; r++)
                         {
-                            if (toggleSprite) toggle(invaderGrid[c, r]);
-                            if (Canvas.GetLeft(invaderGrid[c, r]) >= Window.Current.Bounds.Width - (invaderGrid[c, r].Width * 3))
+                            if (invaderGrid[c, r].Tag != null)
                             {
-                                isMovingDown = true;
-                                isMovingLeft = true;
-                            }
+                                if (toggleSprite) toggle(invaderGrid[c, r]);
+                                if (Canvas.GetLeft(invaderGrid[c, r]) >= Window.Current.Bounds.Width - (invaderGrid[c, r].Width * 3))
+                                {
+                                    isMovingDown = true;
+                                    isMovingLeft = true;
+                                }
 
-                            Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) + 20);
+                                Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) + (20 + speed));
+                            }
                         }
                     }
                 }
@@ -211,7 +217,13 @@ namespace Space_Invaders
             columns = Convert.ToInt32(Window.Current.Bounds.Width / 80);
             rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
 
-            while (columns * rows <= 50) rows++;
+            if (columns * rows > 40)
+            {
+                columns = columns / 2;
+                rows = rows / 2;
+            }
+
+            while (columns * rows <= 40) rows++;
         }
 
         private double sizeModifier()
@@ -241,10 +253,33 @@ namespace Space_Invaders
             {
                 for (int r = 0; r < rows; r++)
                 {
-                    if (invaderGrid[c, r].Tag != null)
-                    canvas.Children.Add(invaderGrid[c,r]);
+                    if (invaderGrid[c, r].Tag != null) canvas.Children.Add(invaderGrid[c, r]);
                 }
             }
         }
+
+        public bool invadersAreAlive()
+        {
+            int counter = 0;
+
+            for (int c = 0; c < columns; c++)
+            {
+                for (int r = 0; r < rows; r++)
+                {
+                    if (invaderGrid[c, r].Tag == null)
+                    {
+                        counter++;
+                        if (counter == invaderGrid.Length) return false;
+                        else if (counter <= 10) speed = 1;
+                        else if (counter <= 20) speed = 3;
+                        else if (counter <= 30) speed = 5;
+                        else if (counter <= 39) speed = 9;
+                    }
+                }
+            }
+
+            return true;
+        }
     }
 }
+

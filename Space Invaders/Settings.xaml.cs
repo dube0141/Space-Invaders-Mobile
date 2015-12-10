@@ -76,5 +76,13 @@ namespace Space_Invaders
         {
             Frame.Navigate(typeof(GamePage));
         }
+
+        private void clearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("All Score Data"))
+            {
+                ApplicationData.Current.LocalSettings.Values.Remove("All Score Data");
+            }
+        }
     }
 }

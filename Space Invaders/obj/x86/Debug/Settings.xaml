@@ -32,11 +32,17 @@
                         <Setter Target="soundFxOff.FontSize" Value="15"/>
                         <Setter Target="musicOn.FontSize" Value="15"/>
                         <Setter Target="musicOff.FontSize" Value="15"/>
+                        <Setter Target="clearText.FontSize" Value="15"/>
+                        <Setter Target="clearBtn.FontSize" Value="13"/>
+                        <Setter Target="clearBtn.Width" Value="100"/>
+                        <Setter Target="clearBtn.Height" Value="30"/>
 
                         <Setter Target="soundFxText.Margin" Value="0,20,20,20"/>
                         <Setter Target="musicText.Margin" Value="0,20,20,20"/>
                         <Setter Target="volumeText.Margin" Value="0,20,20,20"/>
                         <Setter Target="soundFxOn.Margin" Value="20,20,0,20"/>
+                        <Setter Target="clearText.Margin" Value="20,40,0,20"/>
+                        <Setter Target="clearBtn.Margin" Value="20,20,0,20"/>
                         <Setter Target="musicOn.Margin" Value="20,20,0,20"/>
                         <Setter Target="slider.Margin" Value="20,10,0,20"/>
                         <Setter Target="slider.Width" Value="100"/>                 
@@ -63,7 +69,7 @@
 
             </Grid.ColumnDefinitions>
 
-            <Button x:ConnectionId='18' x:Name="settingsBtn"
+            <Button x:ConnectionId='20' x:Name="settingsBtn"
                    
                 VerticalContentAlignment="Center"
                 HorizontalContentAlignment="Center"
@@ -77,7 +83,7 @@
                 FontFamily="Fonts/space_invaders.ttf#Space Invaders" 
                 Height="52" Width="auto" Margin="0" BorderThickness="0" RequestedTheme="Dark"                           />
 
-            <Button x:ConnectionId='19' x:Name="howBtn" 
+            <Button x:ConnectionId='21' x:Name="howBtn" 
                 VerticalContentAlignment="Center"
                 HorizontalContentAlignment="Center"
                 HorizontalAlignment="Stretch"
@@ -91,7 +97,7 @@
                 Height="52" Width="auto" Margin="0" BorderThickness="0" RequestedTheme="Light"                      />
 
 
-            <Button x:ConnectionId='20' x:Name="aboutBtn" 
+            <Button x:ConnectionId='22' x:Name="aboutBtn" 
                 VerticalContentAlignment="Center"
                 HorizontalContentAlignment="Center"
                 Content=" About" 
@@ -113,8 +119,9 @@
                 <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 <ColumnDefinition Width="0.5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            
             <StackPanel Grid.Column="0">
-                <TextBlock x:ConnectionId='15' x:Name="soundFxText" 
+                <TextBlock x:ConnectionId='16' x:Name="soundFxText" 
                        HorizontalAlignment="right" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -125,7 +132,7 @@
                        Foreground="Yellow"
                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
                        />
-                <TextBlock x:ConnectionId='16' x:Name="musicText" 
+                <TextBlock x:ConnectionId='17' x:Name="musicText" 
                        HorizontalAlignment="right" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -136,7 +143,7 @@
                        Foreground="Yellow"
                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
                        />
-                <TextBlock x:ConnectionId='17' x:Name="volumeText" 
+                <TextBlock x:ConnectionId='18' x:Name="volumeText" 
                        HorizontalAlignment="right" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -147,12 +154,24 @@
                        Foreground="Yellow"
                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
                        />
+                <TextBlock x:ConnectionId='19' x:Name="clearText" 
+                       HorizontalAlignment="right" 
+                       Grid.Column="0" 
+                       Margin="40,78,40,0" 
+                       TextWrapping="Wrap" 
+                       Text="Clear Scores" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+                
                 
             </StackPanel>
 
             <StackPanel Grid.Column="1">
                 <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='13' x:Name="soundFxOn" 
+                    <TextBlock x:ConnectionId='14' x:Name="soundFxOn" 
                        HorizontalAlignment="Left" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -163,7 +182,7 @@
                        Foreground="Lime"
                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
                        />
-                    <TextBlock x:ConnectionId='14' x:Name="soundFxOff" 
+                    <TextBlock x:ConnectionId='15' x:Name="soundFxOff" 
                        HorizontalAlignment="Left" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -177,7 +196,7 @@
 
                 </StackPanel>
                 <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                    <TextBlock x:ConnectionId='11' x:Name="musicOn" 
+                    <TextBlock x:ConnectionId='12' x:Name="musicOn" 
                        HorizontalAlignment="Left" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -188,7 +207,7 @@
                        Foreground="Lime"
                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
                        />
-                    <TextBlock x:ConnectionId='12' x:Name="musicOff" 
+                    <TextBlock x:ConnectionId='13' x:Name="musicOff" 
                        HorizontalAlignment="Left" 
                        Grid.Column="0" 
                        Margin="40,20" 
@@ -203,6 +222,18 @@
                 </StackPanel>
                 <Slider x:ConnectionId='10' x:Name="slider" Width="195" HorizontalAlignment="Left" Margin="40,20" Foreground="Yellow" Value="100" RequestedTheme="Dark" Background="{x:Null}" />
 
+                <Button x:ConnectionId='11' x:Name="clearBtn" 
+                        Content="RESET" 
+                        VerticalContentAlignment="Center"
+                        VerticalAlignment="Center" 
+                                               
+                        Width="180"
+                        Margin="40,70,10,0"
+                        BorderBrush="Red"
+                        FontSize="20"
+                        Foreground="Red"
+                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                        Height="52"/>
 
 
             </StackPanel>

@@ -48,12 +48,8 @@
                    Foreground="Yellow"
                    FontFamily="Fonts/space_invaders.ttf#Space Invaders"/>
 
-        <ScrollViewer Grid.Row="1">
-            <StackPanel  x:Name="scoresPanel" Grid.Row="1">
-                
-
-
-            </StackPanel>
+        <ScrollViewer x:Name="scrollBoard" Grid.Row="1" Margin="50,0,50,0">
+           
         </ScrollViewer>
 
        

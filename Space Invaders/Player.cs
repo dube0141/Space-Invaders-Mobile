@@ -45,7 +45,7 @@ namespace Space_Invaders
 
             Canvas.SetLeft(playerSprite, Window.Current.Bounds.Width / 2);
             Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
-            
+
 
             playerSprite.Source = playerBitmapImage;
             canvas.Children.Add(playerSprite);
@@ -55,7 +55,7 @@ namespace Space_Invaders
         {
             Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
 
-            if (isMovingLeft && Canvas.GetLeft(playerSprite)>= 0) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 6);
+            if (isMovingLeft && Canvas.GetLeft(playerSprite) >= 0) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 6);
             if (isMovingRight && Canvas.GetLeft(playerSprite) <= Window.Current.Bounds.Width - playerSprite.Width) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) + 6);
             if (isShooting)
             {

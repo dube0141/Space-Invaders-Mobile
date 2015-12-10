@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-09T20:44:06.612</Modified>
+      <Modified>2015-12-10T22:23:55.657</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -166,7 +166,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\entrypoint\Space Invaders.exe">
       <PackagePath>entrypoint\Space Invaders.exe</PackagePath>
-      <Modified>2015-12-09T20:44:06.257</Modified>
+      <Modified>2015-12-10T22:23:55.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Fonts\space_invaders.ttf">
       <PackagePath>Fonts\space_invaders.ttf</PackagePath>
@@ -202,15 +202,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-09T20:40:10.940</Modified>
+      <Modified>2015-12-10T22:05:18.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Space Invaders.exe">
       <PackagePath>Space Invaders.exe</PackagePath>
-      <Modified>2015-12-09T20:44:06.611</Modified>
+      <Modified>2015-12-10T22:23:55.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\Space Invaders.xr.xml">
       <PackagePath>Space Invaders.xr.xml</PackagePath>
-      <Modified>2015-12-08T22:35:35.243</Modified>
+      <Modified>2015-12-10T21:19:39.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Matt\Documents\Visual Studio 2015\Projects\Space-Invaders-Mobile\Space Invaders\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
