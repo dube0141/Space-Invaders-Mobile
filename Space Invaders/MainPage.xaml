@@ -7,7 +7,56 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="grid" Background="Black">
-        <Canvas x:Name="canvas" HorizontalAlignment="Left" VerticalAlignment="Top" Width="{Binding ElementName=grid, Path=ActualWidth}" Height="{Binding ElementName=grid, Path=ActualHeight}"></Canvas>
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="ms-appx:///Assets/sprites/spacedust1.jpg" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.35*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="highScoreBtn" 
+                Content="Hi-Scores"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+                Margin="10,10,0,0" 
+                Grid.Row="0"
+                Click="highScoreBtn_Click"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                />
+        <Button x:Name="settingsBtn" 
+                Content="Settings" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Top"
+                Margin="0,10,10,0"
+                Grid.Row="0"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders" Click="settingsBtn_Click"
+                />
+        <Image x:Name="textBlock" 
+                   HorizontalAlignment="Center" 
+                   Margin="0"
+                   Source="ms-appx:///Assets/sprites/logo.png"
+                   VerticalAlignment="Center" 
+                   Grid.Row="1"/>
+        <Button x:Name="playBtn" 
+                VerticalContentAlignment="Bottom"
+                HorizontalContentAlignment="Center"
+                Content=" New Game" 
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontSize="40"
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                Margin="0"
+                Grid.Row="2" RequestedTheme="Light" FontFamily="Fonts/space_invaders.ttf#Space Invaders" Height="76" Width="261" Click="playBtn_Click" />
+
     </Grid>
 </Page>

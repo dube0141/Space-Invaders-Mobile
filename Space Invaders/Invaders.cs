@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
@@ -10,36 +11,33 @@ namespace Space_Invaders
     {
         private Image[,] invaderGrid;
         private Image[] invaderBullets;
+        private BitmapImage playerExplosion1 = new BitmapImage(new Uri("ms-appx:///Assets/sprites/explosion-1.png"));
+        private BitmapImage playerExplosion2 = new BitmapImage(new Uri("ms-appx:///Assets/sprites/explosion-2.png"));
 
         private bool invadersAreMoving;
         private bool isMovingLeft;
         private bool isMovingDown;
         private bool toggleSprite;
         private bool isShooting;
+        private bool isPlayerAlive;
 
         private int count;
         private int speed;
         private int randomColumn;
-        private int columns = Convert.ToInt32(Window.Current.Bounds.Width / 120);
-        private int rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
+        private int columns;
+        private int rows;
 
-        MediaElement BackgroundMusic;
-
-        public Invaders(Canvas canvas)
+        public Invaders(Canvas canvas, int lvl)
         {
-            BackgroundMusic = new MediaElement();
-            BackgroundMusic.Source = new Uri("ms-appx:///Assets/Audio/01-opening-theme.mp3");
-            BackgroundMusic.AutoPlay = true;
-            canvas.Children.Add(BackgroundMusic);
-            BackgroundMusic.Volume = 0.2;
-            BackgroundMusic.Play();
-
+            createRowsAndColumns();
             invaderGrid = new Image[columns, rows];
             invaderBullets = new Image[3];
 
             isMovingLeft = invadersAreMoving = isMovingDown = toggleSprite = false;
             isShooting = true;
-            speed = count = 0;
+            isPlayerAlive = true;
+            count = 0;
+            speed = lvl;
 
             for (int c = 0; c < columns; c++)
             {
@@ -50,27 +48,31 @@ namespace Space_Invaders
 
                     if (r < 1)
                     {
-                        invader.Height = 24;
+                        invader.Height = 24 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-1.png"));
                     }
                     else if (r < 3)
                     {
-                        invader.Height = 28;
+                        invader.Height = 28 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-1.png"));
                     }
                     else
                     {
-                        invader.Height = 32;
+                        invader.Height = 32 * sizeModifier();
                         invader.Tag = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-2.png"));
                         bitmapSource = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-1.png"));
                     }
 
-                    Canvas.SetLeft(invader, 50 + (50 * c));
-                    Canvas.SetTop(invader, 50 + (50 * r));
 
-                    invader.Width = 32;
+
+                    Canvas.SetLeft(invader, 32 + (50 * c));
+                    
+                    if (rows * 32 >= Window.Current.Bounds.Height / 2) Canvas.SetTop(invader, -((rows * 32) - 64) + (50 * r));
+                    else Canvas.SetTop(invader, 32 + (50 * r));
+
+                    invader.Width = 32 * sizeModifier();
                     invader.Source = bitmapSource;
 
                     canvas.Children.Add(invader);
@@ -79,10 +81,10 @@ namespace Space_Invaders
             }
         }
 
-        public void Draw(Canvas canvas, Image player)
+        public void Draw(Canvas canvas, Image player, Sounds sounds)
         {
-            if (count % 15 == 1) toggleSprite = invadersAreMoving = true;
-            if (count % 20 == 1 && new Random().Next(0, 3) == 2) invaderShoot(canvas, player);
+            if (count % (15 - speed) == 1) toggleSprite = invadersAreMoving = true;
+            if (count % (20 - speed) == 1 && new Random().Next(0, 3) == 2) invaderShoot(canvas, player);
             if (isMovingDown)
             {
                 for (int c = 0; c < columns; c++)
@@ -91,6 +93,13 @@ namespace Space_Invaders
                     {
                         isMovingDown = false;
                         Canvas.SetTop(invaderGrid[c, r], Canvas.GetTop(invaderGrid[c, r]) + invaderGrid[c, r].Width);
+                        if (invaderGrid[c, r].Tag != null)
+                        {
+                            if (Canvas.GetTop(invaderGrid[c, r]) >= Window.Current.Bounds.Height - (invaderGrid[c, r].Height * 3))
+                            {
+                                isPlayerAlive = false;
+                            }
+                        }
                     }
                 }
             }
@@ -103,14 +112,17 @@ namespace Space_Invaders
                     {
                         for (int r = 0; r < rows; r++)
                         {
-                            if (toggleSprite) toggle(invaderGrid[c, r]);
-                            if (Canvas.GetLeft(invaderGrid[c, r]) <= 0 + (invaderGrid[c, r].Width * 2))
+                            if (invaderGrid[c, r].Tag != null)
                             {
-                                isMovingDown = true;
-                                isMovingLeft = false;
-                            }
+                                if (toggleSprite) toggle(invaderGrid[c, r]);
+                                if (Canvas.GetLeft(invaderGrid[c, r]) <= 0 + (invaderGrid[c, r].Width * 2))
+                                {
+                                    isMovingDown = true;
+                                    isMovingLeft = false;
+                                }
 
-                            Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) - 20);
+                                Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) - (20 + speed));
+                            }
                         }
                     }
                 }
@@ -120,14 +132,17 @@ namespace Space_Invaders
                     {
                         for (int r = 0; r < rows; r++)
                         {
-                            if (toggleSprite) toggle(invaderGrid[c, r]);
-                            if (Canvas.GetLeft(invaderGrid[c, r]) >= Window.Current.Bounds.Width - (invaderGrid[c, r].Width * 3))
+                            if (invaderGrid[c, r].Tag != null)
                             {
-                                isMovingDown = true;
-                                isMovingLeft = true;
-                            }
+                                if (toggleSprite) toggle(invaderGrid[c, r]);
+                                if (Canvas.GetLeft(invaderGrid[c, r]) >= Window.Current.Bounds.Width - (invaderGrid[c, r].Width * 3))
+                                {
+                                    isMovingDown = true;
+                                    isMovingLeft = true;
+                                }
 
-                            Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) + 20);
+                                Canvas.SetLeft(invaderGrid[c, r], Canvas.GetLeft(invaderGrid[c, r]) + (20 + speed));
+                            }
                         }
                     }
                 }
@@ -145,7 +160,9 @@ namespace Space_Invaders
                         {
                             if (Canvas.GetTop(player) + player.Height >= Canvas.GetTop(invaderBullets[i]) && Canvas.GetTop(player) <= Canvas.GetTop(invaderBullets[i]))
                             {
-                                isShooting = false;
+                                removeKilled(player);
+                                sounds.playPlayerKilledSound();
+                                isShooting = false;                                
                             }
                         }
                         else if (Canvas.GetTop(invaderBullets[i]) >= Window.Current.Bounds.Height - invaderBullets[i].Height)
@@ -153,13 +170,29 @@ namespace Space_Invaders
                             canvas.Children.Remove(invaderBullets[i]);
                         }
 
-                        Canvas.SetTop(invaderBullets[i], Canvas.GetTop(invaderBullets[i]) + 5);
+                        Canvas.SetTop(invaderBullets[i], Canvas.GetTop(invaderBullets[i]) + 15);
                     }
                 }
             }
 
             toggleSprite = false;
             count++;
+        }
+
+        private async void removeKilled(Image player)
+        {
+            player.Source = playerExplosion1;
+            await Task.Delay(100);
+            player.Source = playerExplosion2;
+            await Task.Delay(100);
+            player.Source = playerExplosion1;
+            await Task.Delay(100);
+            player.Source = playerExplosion2;
+            await Task.Delay(100);
+            player.Source = null;
+
+            await Task.Delay(500);
+            setPlayerAlive(false);
         }
 
         private void invaderShoot(Canvas canvas, Image player)
@@ -206,6 +239,21 @@ namespace Space_Invaders
             }
         }
 
+        private void createRowsAndColumns()
+        {
+            columns = Convert.ToInt32(Window.Current.Bounds.Width / 80);
+            rows = Convert.ToInt32(Window.Current.Bounds.Height / 100);
+
+            while (columns * rows <= 40) rows++;
+        }
+
+        private double sizeModifier()
+        {
+            if (Window.Current.Bounds.Width <= 300) return 0.5;
+            else if (Window.Current.Bounds.Width <= 500) return 0.8;
+            else return 1;
+        }
+
         public Image[,] getInvaderGrid()
         {
             return invaderGrid;
@@ -213,7 +261,45 @@ namespace Space_Invaders
 
         public bool playerAlive()
         {
-            return isShooting;
+            return isPlayerAlive;
+        }
+        public void setPlayerAlive(bool status)
+        {
+            isPlayerAlive = status;
+            isShooting = status;
+        }
+        public void rebuildInvaders(Canvas canvas)
+        {
+            for (int c = 0; c < columns; c++)
+            {
+                for (int r = 0; r < rows; r++)
+                {
+                    if (invaderGrid[c, r].Tag != null) canvas.Children.Add(invaderGrid[c, r]);
+                }
+            }
+        }
+
+        public bool invadersAreAlive()
+        {
+            int counter = 0;
+
+            for (int c = 0; c < columns; c++)
+            {
+                for (int r = 0; r < rows; r++)
+                {
+                    if (invaderGrid[c, r].Tag == null)
+                    {
+                        counter++;
+                        if (counter == invaderGrid.Length) return false;
+                        else if (counter <= 10) speed = 2;
+                        else if (counter <= 20) speed = 3;
+                        else if (counter <= 30) speed = 4;
+                        else if (counter <= 39) speed = 7;
+                    }
+                }
+            }
+
+            return true;
         }
     }
 }

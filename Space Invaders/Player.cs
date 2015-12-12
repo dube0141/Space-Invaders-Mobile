@@ -13,40 +13,49 @@ namespace Space_Invaders
         private Image playerSprite;
         private Image playerBullet;
 
+
         private BitmapImage playerBitmapImage = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/player.png"));
         private BitmapImage invaderKilledImage = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/explosion.png"));
+        private BitmapImage alien1A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-1.png"));
+        private BitmapImage alien1B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-1-2.png"));
+        private BitmapImage alien2A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-1.png"));
+        private BitmapImage alien2B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-2-2.png"));
+        private BitmapImage alien3A = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-1.png"));
+        private BitmapImage alien3B = new BitmapImage(new Uri("ms-appx:///Assets/sprites/alien-3-2.png"));
 
         private bool isMovingLeft;
         private bool isMovingRight;
         private bool isShooting;
 
-        public Player(Canvas canvas)
+        private int playerScore;
+
+
+        public Player(Canvas canvas, int playerGameScore)
         {
             Window.Current.CoreWindow.KeyDown += onKeyDown;
             Window.Current.CoreWindow.KeyUp += onKeyUp;
 
+            playerScore = playerGameScore;
+            isMovingLeft = isMovingRight = isShooting = false;
+
+
             playerSprite = new Image();
-            playerBitmapImage.ImageOpened += (sender, e) =>
-            {
-                isMovingLeft = isMovingRight = isShooting = false;
+            playerSprite.Width = 52 * sizeModifier();
+            playerSprite.Height = 32 * sizeModifier();
 
-                playerSprite.Width = playerBitmapImage.PixelWidth;
-                playerSprite.Height = playerBitmapImage.PixelHeight;
-
-                Canvas.SetLeft(playerSprite, Window.Current.Bounds.Width / 2);
-                Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
-            };
+            Canvas.SetLeft(playerSprite, Window.Current.Bounds.Width / 2);
+            Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
 
             playerSprite.Source = playerBitmapImage;
             canvas.Children.Add(playerSprite);
         }
 
-        public void Draw(Canvas canvas, Image[,] invaderGrid)
+        public void Draw(Canvas canvas, Image[,] invaderGrid, Sounds sounds)
         {
             Canvas.SetTop(playerSprite, Window.Current.Bounds.Height - (playerSprite.Height * 2));
 
-            if (isMovingLeft) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 5);
-            if (isMovingRight) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) + 5);
+            if (isMovingLeft && Canvas.GetLeft(playerSprite) >= 0) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) - 6);
+            if (isMovingRight && Canvas.GetLeft(playerSprite) <= Window.Current.Bounds.Width - playerSprite.Width) Canvas.SetLeft(playerSprite, Canvas.GetLeft(playerSprite) + 6);
             if (isShooting)
             {
                 //If no bullet is found, create a new one.
@@ -54,14 +63,15 @@ namespace Space_Invaders
                 {
                     playerBullet = new Image();
 
-                    playerBullet.Width = 3;
-                    playerBullet.Height = 8;
+                    playerBullet.Width = 3 * sizeModifier();
+                    playerBullet.Height = 8 * sizeModifier();
 
                     playerBullet.Source = new BitmapImage(new Uri("ms-appx:///Assets/Sprites/player-bullet.png"));
 
                     Canvas.SetTop(playerBullet, Canvas.GetTop(playerSprite));
                     Canvas.SetLeft(playerBullet, Canvas.GetLeft(playerSprite) + (playerSprite.Width / 2 - 1));
 
+                    sounds.playPlayerShootSound();
                     canvas.Children.Add(playerBullet);
                 }
                 //Move bullet upward and check for alienGrid collision.
@@ -75,11 +85,20 @@ namespace Space_Invaders
                             {
                                 if (invaderGrid[r, c].Tag != null)
                                 {
+
+                                    playerScore = playerScore + (10 * (invaderGrid.GetLength(1) - c));
+
+                                    if (invaderGrid[r, c].Source == alien1A || invaderGrid[r, c].Source == alien1B) playerScore = playerScore + 100;
+                                    else if (invaderGrid[r, c].Source == alien2A || invaderGrid[r, c].Source == alien2B) playerScore = playerScore + 50;
+                                    else playerScore = playerScore + 25;
+
+
                                     isShooting = false;
                                     invaderGrid[r, c].Tag = null;
-
+                                    sounds.playinvaderKilledSound();
                                     canvas.Children.Remove(playerBullet);
                                     removeKilled(canvas, invaderGrid[r, c]);
+
                                 }
                             }
                         }
@@ -110,6 +129,13 @@ namespace Space_Invaders
             if (args.VirtualKey == Windows.System.VirtualKey.Right) isMovingRight = false;
         }
 
+        private double sizeModifier()
+        {
+            if (Window.Current.Bounds.Width <= 300) return 0.5;
+            else if (Window.Current.Bounds.Width <= 500) return 0.8;
+            else return 1;
+        }
+
         private async void removeKilled(Canvas canvas, Image invader)
         {
             invader.Source = invaderKilledImage;
@@ -121,5 +147,12 @@ namespace Space_Invaders
         {
             return playerSprite;
         }
+
+        public int getScore()
+        {
+            return playerScore;
+        }
+
+
     }
 }

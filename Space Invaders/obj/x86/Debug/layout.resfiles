@@ -2,6 +2,9 @@ WinMetadata\Windows.winmd
 ApplicationInsights.config
 Assets\Audio\01-opening-theme.mp3
 Assets\Audio\02-rounds-1-9.mp3
+Assets\Audio\explosion.wav
+Assets\Audio\gameover.mp3
+Assets\Audio\invaderkilled.wav
 Assets\Audio\shoot.wav
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
@@ -15,12 +18,15 @@ Assets\Sprites\alien-4.png
 Assets\Sprites\alien-bullet.png
 Assets\Sprites\defense-full.png
 Assets\Sprites\explosion.png
+Assets\Sprites\explosion-1.png
+Assets\Sprites\explosion-2.png
 Assets\Sprites\icon-about.png
 Assets\Sprites\icon-settings.png
 Assets\Sprites\lives.png
 Assets\Sprites\logo.png
 Assets\Sprites\player.png
 Assets\Sprites\player-bullet.png
+Assets\Sprites\spacedust1.jpg
 Assets\Sprites\spaceinvaders.jpg
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -28,4 +34,5 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 Space Invaders.xr.xml
+Fonts\space_invaders.ttf
 Properties\Default.rd.xml

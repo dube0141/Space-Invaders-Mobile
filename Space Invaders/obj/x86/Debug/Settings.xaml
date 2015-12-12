@@ -1,0 +1,253 @@
+﻿<Page
+    x:Class="Space_Invaders.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Space_Invaders"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='1' x:Name="desktopView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:ConnectionId='2' x:Name="mobileView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="settingsBtn.FontSize" Value="13"/>
+                        <Setter Target="aboutBtn.FontSize" Value="13"/>
+                        <Setter Target="howBtn.FontSize" Value="13"/>
+                        <Setter Target="backBtn.FontSize" Value="13"/>
+                        <Setter Target="playBtn.FontSize" Value="13"/>
+                        <Setter Target="musicText.FontSize" Value="15"/>
+                        <Setter Target="volumeText.FontSize" Value="15"/>
+                        <Setter Target="musicOn.FontSize" Value="15"/>
+                        <Setter Target="musicOff.FontSize" Value="15"/>
+                        <Setter Target="clearText.FontSize" Value="15"/>
+                        <Setter Target="clearBtn.FontSize" Value="13"/>
+                        <Setter Target="clearBtn.Width" Value="100"/>
+                        <Setter Target="clearBtn.Height" Value="30"/>
+
+                        <Setter Target="musicText.Margin" Value="0,20,20,20"/>
+                        <Setter Target="volumeText.Margin" Value="0,20,20,20"/>
+                        <Setter Target="clearText.Margin" Value="20,40,0,20"/>
+                        <Setter Target="clearBtn.Margin" Value="20,20,0,20"/>
+                        <Setter Target="musicOn.Margin" Value="20,20,0,20"/>
+                        <Setter Target="slider.Margin" Value="20,10,0,20"/>
+                        <Setter Target="slider.Width" Value="100"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+        <Grid.Background>
+            <ImageBrush Stretch="None" ImageSource="ms-appx:///Assets/sprites/spacedust1.jpg" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid x:ConnectionId='3' x:Name="headerTabs"  Grid.Row="0" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.9*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="0.9*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:ConnectionId='17' x:Name="settingsBtn"
+                   
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Stretch"
+                Content=" Settings" 
+                Grid.Row="0"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontSize="25"
+                VerticalAlignment="Center"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders" 
+                Height="52" Width="auto" Margin="0" BorderThickness="0" RequestedTheme="Dark"                           />
+
+            <Button x:ConnectionId='18' x:Name="howBtn" 
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                HorizontalAlignment="Stretch"
+                Content=" How to play" 
+                Grid.Column="1"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontSize="25"
+                VerticalAlignment="Center"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders" 
+                Height="52" Width="auto" Margin="0" BorderThickness="0" RequestedTheme="Light"                      />
+
+
+            <Button x:ConnectionId='19' x:Name="aboutBtn" 
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Content=" About" 
+                
+                 Grid.Column="2"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontSize="25"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders" 
+                Height="52" Width="auto" Margin="0" BorderThickness="0" RequestedTheme="Light"                        />
+
+        </Grid>
+
+        <Grid x:ConnectionId='4' x:Name="settingsGrid" Grid.Row="1" HorizontalAlignment="Stretch" Visibility="Visible">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock x:ConnectionId='14' x:Name="musicText" 
+                       HorizontalAlignment="right" 
+                       Grid.Column="0" 
+                       Margin="40,20" 
+                       TextWrapping="Wrap" 
+                       Text="AUDIO" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+                <TextBlock x:ConnectionId='15' x:Name="volumeText" 
+                       HorizontalAlignment="right" 
+                       Grid.Column="0" 
+                       Margin="40,20" 
+                       TextWrapping="Wrap" 
+                       Text="Volume" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+                <TextBlock x:ConnectionId='16' x:Name="clearText" 
+                       HorizontalAlignment="right" 
+                       Grid.Column="0" 
+                       Margin="40,78,40,0" 
+                       TextWrapping="Wrap" 
+                       Text="Clear Scores" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal"/>
+                <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                    <TextBlock x:ConnectionId='12' x:Name="musicOn" 
+                       HorizontalAlignment="Left" 
+                       Grid.Column="0" 
+                       Margin="40,20" 
+                       TextWrapping="Wrap" 
+                       Text="ON" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Lime"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"                        
+                       />
+                    <TextBlock x:ConnectionId='13' x:Name="musicOff" 
+                       HorizontalAlignment="Left" 
+                       Grid.Column="0" 
+                       Margin="40,20" 
+                       TextWrapping="Wrap" 
+                       Text="Off" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="DarkRed"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"                         
+                       />
+
+                </StackPanel>
+                <Slider x:ConnectionId='10' x:Name="slider" Width="195" HorizontalAlignment="Left" Margin="40,20" Foreground="Yellow" RequestedTheme="Dark" Background="{x:Null}"                                    />
+
+                <Button x:ConnectionId='11' x:Name="clearBtn" 
+                        Content="RESET" 
+                        VerticalContentAlignment="Center"
+                        VerticalAlignment="Center" 
+                                               
+                        Width="180"
+                        Margin="40,70,10,0"
+                        BorderBrush="Red"
+                        FontSize="20"
+                        Foreground="Red"
+                        FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                        Height="52"/>
+
+
+            </StackPanel>
+        </Grid>
+
+        <Grid x:ConnectionId='5' x:Name="howGrid" Grid.Row="1" HorizontalAlignment="Stretch" Visibility="Collapsed">
+
+
+        </Grid>
+
+        <Grid x:ConnectionId='6' x:Name="aboutGrid" Grid.Row="1" HorizontalAlignment="Stretch" Visibility="Collapsed">
+
+
+        </Grid>
+
+        <Grid x:ConnectionId='7' x:Name="footerBtns" Grid.Row="2" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:ConnectionId='8' x:Name="backBtn" 
+                Content="Back to Menu" 
+                HorizontalAlignment="Stretch" 
+                VerticalContentAlignment="Center"
+                VerticalAlignment="Center"                               
+                Width="auto"
+                Margin="10,0,10,0"
+                BorderBrush="Yellow"
+                FontSize="20"
+                Foreground="Yellow"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                Height="52"
+                
+                />
+            <Button x:ConnectionId='9' x:Name="playBtn" 
+                Content=" New Game" 
+                HorizontalAlignment="Stretch" 
+                VerticalContentAlignment="Center"
+                Grid.Column="1"
+                Margin="10,0,10,0"
+                                         
+                VerticalAlignment="Center"
+                BorderBrush="Yellow"
+                Foreground="Yellow"
+                FontSize="20"
+                FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                Height="52" Width="auto"
+                   
+                />
+
+        </Grid>
+
+    </Grid>
+</Page>
+

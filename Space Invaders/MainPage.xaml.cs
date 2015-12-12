@@ -13,39 +13,34 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+
 namespace Space_Invaders
 {
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
     public sealed partial class MainPage : Page
     {
-        private DispatcherTimer dispatcherTimer;
-
-        private Player player;
-        private Invaders invaders;
-
         public MainPage()
         {
             this.InitializeComponent();
-
-            player = new Player(canvas);
-            invaders = new Invaders(canvas);
-
-            dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Tick += Game;
-            dispatcherTimer.Interval = TimeSpan.FromTicks(TimeSpan.TicksPerSecond / 30);
-            dispatcherTimer.Start();
         }
 
-        private void Game(object sender, object e)
-        {   
-            if(!invaders.playerAlive())
-            {
-                canvas.Children.Clear();
-                player = new Player(canvas);
-                invaders = new Invaders(canvas);
-                return;
-            }
-            invaders.Draw(canvas, player.getPlayer());
-            player.Draw(canvas, invaders.getInvaderGrid());
+        private void highScoreBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HighScores));
+        }
+
+        private void settingsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Settings));
+        }
+
+        private void playBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(GamePage));
         }
     }
+    
 }
