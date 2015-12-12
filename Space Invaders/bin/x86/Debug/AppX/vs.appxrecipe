@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>bc8a78fb-65b1-47ca-a9be-04cc25889b3b</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>D05895E9F4DE79BCE4F74D9E67A5DBAC38296BB4FDD54716C011C3917CF54FCF</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C7240FF164B5AF309732938D4FE0DFEAABF5FB835C229C0673738A09F34020D6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bc8a78fb-65b1-47ca-a9be-04cc25889b3b_1.0.0.0_x86__nyrj5q9prta9a</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bc8a78fb-65b1-47ca-a9be-04cc25889b3b_nyrj5q9prta9a!App</RegisteredUserModeAppID>
     <RegisteredPackageID>bc8a78fb-65b1-47ca-a9be-04cc25889b3b</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-12T02:01:09.802</Modified>
+      <Modified>2015-12-12T02:26:56.160</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -54,14 +54,59 @@
       <PackagePath>Assets\Audio\shoot.wav</PackagePath>
       <Modified>2015-12-10T19:50:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:08:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:08:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:08:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:08:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:08:58.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-12-10T19:50:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-1-1.png">
       <PackagePath>Assets\Sprites\alien-1-1.png</PackagePath>
@@ -143,30 +188,180 @@
       <PackagePath>Assets\Sprites\spaceinvaders.jpg</PackagePath>
       <Modified>2015-12-10T19:50:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:09:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-12-10T19:50:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-08T21:10:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
@@ -174,7 +369,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\entrypoint\Space Invaders.exe">
       <PackagePath>entrypoint\Space Invaders.exe</PackagePath>
-      <Modified>2015-12-12T02:01:08.923</Modified>
+      <Modified>2015-12-12T02:26:55.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Fonts\space_invaders.ttf">
       <PackagePath>Fonts\space_invaders.ttf</PackagePath>
@@ -210,11 +405,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-12T01:54:23.105</Modified>
+      <Modified>2015-12-12T02:26:55.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Space Invaders.exe">
       <PackagePath>Space Invaders.exe</PackagePath>
-      <Modified>2015-12-12T02:01:09.801</Modified>
+      <Modified>2015-12-12T02:26:56.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Space Invaders.xr.xml">
       <PackagePath>Space Invaders.xr.xml</PackagePath>
