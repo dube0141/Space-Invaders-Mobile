@@ -41,6 +41,38 @@
                         <Setter Target="musicOn.Margin" Value="20,20,0,20"/>
                         <Setter Target="slider.Margin" Value="20,10,0,20"/>
                         <Setter Target="slider.Width" Value="100"/>
+
+
+                        <Setter Target="moveText.FontSize" Value="15"/>
+                        <Setter Target="shootText.FontSize" Value="15"/>
+                        <Setter Target="leftArrowImage.Width" Value="40"/>
+                        <Setter Target="rightArrowImage.Width" Value="40"/>
+                        <Setter Target="upArrowImage.Width" Value="40"/>
+                        <Setter Target="spaceBarImage.Width" Value="70"/>
+                        <Setter Target="objText.FontSize" Value="15"/>
+                        <Setter Target="objText2.FontSize" Value="10"/>
+
+                        <Setter Target="moveText.Margin" Value="0,20,20,20"/>
+                        <Setter Target="shootText.Margin" Value="0,20,20,20"/>
+                        <Setter Target="leftArrowImage.Margin" Value="20,8,0,0"/>
+                        <Setter Target="rightArrowImage.Margin" Value="0,8,0,0"/>
+                        <Setter Target="upArrowImage.Margin" Value="20,22,0,0"/>
+                        <Setter Target="spaceBarImage.Margin" Value="0,20,0,0"/>
+                        <Setter Target="objText.Margin" Value="40,50,20,0"/>
+
+                        <Setter Target="dubeNameText.FontSize" Value="13"/>
+                        <Setter Target="youngNameText.FontSize" Value="13"/>
+                        <Setter Target="dubeNameText.Width" Value="Auto"/>
+                        <Setter Target="youngNameText.Width" Value="Auto"/>
+                        <Setter Target="dubeNameText.Margin" Value="0,20,0,0"/>
+                        <Setter Target="youngNameText.Margin" Value="0,20,0,0"/>
+                        <Setter Target="dubeImage.Width" Value="125"/>
+                        <Setter Target="youngImage.Width" Value="125"/>
+                        <Setter Target="dubeImage.Height" Value="125"/>
+                        <Setter Target="youngImage.Height" Value="125"/>
+                        <Setter Target="aboutText.FontSize" Value="10"/>
+                        <Setter Target="aboutText.Width" Value="350"/>
+
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -200,11 +232,178 @@
         </Grid>
 
         <Grid x:Name="howGrid" Grid.Row="1" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="3*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
 
 
+                        <StackPanel Grid.Column="0">
+                            <TextBlock x:Name="moveText" 
+                           HorizontalAlignment="Right" 
+                           Margin="40,55"
+                           TextWrapping="Wrap" 
+                           Text="Move" 
+                           VerticalAlignment="Top"
+                           FontSize="30"
+                           Foreground="Yellow"
+                           FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                           />
+                            <TextBlock x:Name="shootText" 
+                           HorizontalAlignment="Right" 
+                           Margin="40,15" 
+                           TextWrapping="Wrap" 
+                           Text="Shoot" 
+                           VerticalAlignment="Top"
+                           FontSize="30"
+                           Foreground="Yellow"
+                           FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                           />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="leftArrowImage" 
+                               HorizontalAlignment="Center" 
+                                Width="100"
+                               Margin="40,25,0,0"
+                               Source="ms-appx:///Assets/sprites/leftarrow.png"
+                               VerticalAlignment="Center" />
+
+                                <Image x:Name="rightArrowImage" 
+                               HorizontalAlignment="Center" 
+                                Width="100"
+                               Margin="0,25,0,0"
+                               Source="ms-appx:///Assets/sprites/rightarrow.png"
+                               VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image x:Name="upArrowImage" 
+                               HorizontalAlignment="Center" 
+                                Width="100"
+                               Margin="40,10,0,0"
+                               Source="ms-appx:///Assets/sprites/uparrow.png"
+                               VerticalAlignment="Center" />
+
+                                <Image x:Name="spaceBarImage" 
+                               HorizontalAlignment="Center" 
+                                Width="200"
+                               Margin="0"
+                               Source="ms-appx:///Assets/sprites/spacebar.png"
+                               VerticalAlignment="Center" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+
+                    <StackPanel Grid.Row="1">
+                        <TextBlock x:Name="objText" 
+                       HorizontalAlignment="Center" 
+                       Grid.Column="0" 
+                       Margin="40,75,20,0" 
+                       TextWrapping="Wrap" 
+                       TextAlignment="Center"
+                       Text="Earth is being invaded by aliens!" 
+                       VerticalAlignment="Top"
+                       FontSize="40"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+                        <TextBlock x:Name="objText2" 
+                       HorizontalAlignment="Center" 
+                       TextAlignment="Center"
+                       Grid.Column="0" 
+                       MaxWidth="1500"
+                       Margin="40,25,20,0" 
+                       TextWrapping="Wrap" 
+                       Text="Protect your planet by destroying the waves of alien fleets before they reach ground zero!!" 
+                       VerticalAlignment="Top"
+                       FontSize="30"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders"
+                       />
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
         </Grid>
 
+
         <Grid x:Name="aboutGrid" Grid.Row="1" HorizontalAlignment="Stretch" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <TextBlock x:Name="dubeNameText" 
+                       HorizontalAlignment="Center" 
+                        VerticalAlignment="Top"
+                       Margin="0,0,0,0"
+                       TextWrapping="NoWrap"
+                       TextAlignment="Right"
+                       Text="Gabriel Dube" 
+                       FontSize="25"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders" Width="210"
+                       />
+
+                <Image x:Name="dubeImage" 
+                        HorizontalAlignment="Center" 
+                        Width="171"
+                        Margin="0,0,0,0"
+                        Source="ms-appx:///Assets/sprites/dube.jpg"
+                        VerticalAlignment="Center" 
+                        Height="178"
+                        MinHeight="178"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <TextBlock x:Name="youngNameText" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Top"
+                       Margin="0,0,0,0"
+                       TextWrapping="NoWrap"
+                       TextAlignment="Left"
+                       Text="Matt Young" 
+                       FontSize="25"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders" Width="172"
+                       />
+
+                <Image x:Name="youngImage" 
+                        HorizontalAlignment="Center" 
+                        Width="171"
+                        Margin="0,0,0,0"
+                        Source="ms-appx:///Assets/sprites/matt.jpg"
+                        VerticalAlignment="Center" 
+                        Height="178"
+                        MinHeight="178"/>
+
+            </StackPanel>
+            <TextBlock x:Name="aboutText" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Top"
+                       Margin="0,50,0,0"
+                       Grid.Row="1"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Text="Gabriel and Matt are both students in the Mobile Application Design and Development program at Algonquin College." 
+                       FontSize="20"
+                       Foreground="Yellow"
+                       FontFamily="Fonts/space_invaders.ttf#Space Invaders" Width="701" Grid.ColumnSpan="2" Height="162"
+                       />
+
+
+
 
 
         </Grid>
@@ -249,4 +448,16 @@
         </Grid>
 
     </Grid>
+
+    <Page.BottomAppBar>
+        <AppBar x:Name="appBar" Height="50" IsOpen="True" IsSticky="True" Visibility="Collapsed">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton Icon="Mail" Label="Gabriel" Click="gabeMail_Click"/>
+                <AppBarButton Icon="Mail" Label="Matt" Click="mattMail_Click"/>
+            </StackPanel>
+        </AppBar>
+        
+
+    </Page.BottomAppBar>
 </Page>
+

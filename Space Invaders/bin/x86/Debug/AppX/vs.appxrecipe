@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-Q0VC7JP</Machine>
-    <WindowsUser>Gabriel</WindowsUser>
+    <Machine>DESKTOP-OVKAG49</Machine>
+    <WindowsUser>Matt</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>bc8a78fb-65b1-47ca-a9be-04cc25889b3b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>C7240FF164B5AF309732938D4FE0DFEAABF5FB835C229C0673738A09F34020D6</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>5EB1FC025215A0CE76D8FA6D4DFBB048754969ED00AAE8C335E49DB558B3F5FA</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bc8a78fb-65b1-47ca-a9be-04cc25889b3b_1.0.0.0_x86__nyrj5q9prta9a</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bc8a78fb-65b1-47ca-a9be-04cc25889b3b_nyrj5q9prta9a!App</RegisteredUserModeAppID>
     <RegisteredPackageID>bc8a78fb-65b1-47ca-a9be-04cc25889b3b</RegisteredPackageID>
@@ -19,801 +19,825 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-12T02:26:56.160</Modified>
+      <Modified>2015-12-14T01:46:27.982</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\01-opening-theme.mp3">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\01-opening-theme.mp3">
       <PackagePath>Assets\Audio\01-opening-theme.mp3</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.743</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\02-rounds-1-9.mp3">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\02-rounds-1-9.mp3">
       <PackagePath>Assets\Audio\02-rounds-1-9.mp3</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\explosion.wav">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\explosion.wav">
       <PackagePath>Assets\Audio\explosion.wav</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.798</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\gameover.mp3">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\gameover.mp3">
       <PackagePath>Assets\Audio\gameover.mp3</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\invaderkilled.wav">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\invaderkilled.wav">
       <PackagePath>Assets\Audio\invaderkilled.wav</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.819</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Audio\shoot.wav">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Audio\shoot.wav">
       <PackagePath>Assets\Audio\shoot.wav</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.828</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:08:50.000</Modified>
+      <Modified>2015-12-12T03:10:55.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-125.png">
       <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:08:52.000</Modified>
+      <Modified>2015-12-12T03:10:55.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-150.png">
       <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:08:54.000</Modified>
+      <Modified>2015-12-12T03:10:55.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-200.png">
       <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:08:56.000</Modified>
+      <Modified>2015-12-12T03:10:55.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:08:58.000</Modified>
+      <Modified>2015-12-12T03:10:55.275</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.291</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:00.000</Modified>
+      <Modified>2015-12-12T03:10:55.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.314</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:06.000</Modified>
+      <Modified>2015-12-12T03:10:55.325</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:10.000</Modified>
+      <Modified>2015-12-12T03:10:55.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-1-1.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-1-1.png">
       <PackagePath>Assets\Sprites\alien-1-1.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-1-2.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-1-2.png">
       <PackagePath>Assets\Sprites\alien-1-2.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.848</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-2-1.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-2-1.png">
       <PackagePath>Assets\Sprites\alien-2-1.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.858</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-2-2.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-2-2.png">
       <PackagePath>Assets\Sprites\alien-2-2.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.016</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-3-1.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-3-1.png">
       <PackagePath>Assets\Sprites\alien-3-1.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.102</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-3-2.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-3-2.png">
       <PackagePath>Assets\Sprites\alien-3-2.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.182</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-4.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-4.png">
       <PackagePath>Assets\Sprites\alien-4.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.191</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-bullet.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\alien-bullet.png">
       <PackagePath>Assets\Sprites\alien-bullet.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.199</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\defense-full.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\defense-full.png">
       <PackagePath>Assets\Sprites\defense-full.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion-1.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\dube.jpg">
+      <PackagePath>Assets\Sprites\dube.jpg</PackagePath>
+      <Modified>2015-12-12T05:31:06.287</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion-1.png">
       <PackagePath>Assets\Sprites\explosion-1.png</PackagePath>
-      <Modified>2015-12-12T01:25:51.032</Modified>
+      <Modified>2015-12-12T03:10:56.215</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion-2.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion-2.png">
       <PackagePath>Assets\Sprites\explosion-2.png</PackagePath>
-      <Modified>2015-12-12T01:25:51.032</Modified>
+      <Modified>2015-12-12T03:10:56.223</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\explosion.png">
       <PackagePath>Assets\Sprites\explosion.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.231</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\icon-about.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\icon-about.png">
       <PackagePath>Assets\Sprites\icon-about.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\icon-settings.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\icon-settings.png">
       <PackagePath>Assets\Sprites\icon-settings.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\lives.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\leftarrow.png">
+      <PackagePath>Assets\Sprites\leftarrow.png</PackagePath>
+      <Modified>2015-12-12T03:22:39.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\lives.png">
       <PackagePath>Assets\Sprites\lives.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.256</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\logo.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\logo.png">
       <PackagePath>Assets\Sprites\logo.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.264</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\player-bullet.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\matt.jpg">
+      <PackagePath>Assets\Sprites\matt.jpg</PackagePath>
+      <Modified>2015-12-12T23:07:24.960</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\player-bullet.png">
       <PackagePath>Assets\Sprites\player-bullet.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\player.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\player.png">
       <PackagePath>Assets\Sprites\player.png</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.281</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spacedust1.jpg">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\rightarrow.png">
+      <PackagePath>Assets\Sprites\rightarrow.png</PackagePath>
+      <Modified>2015-12-12T03:22:39.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spacebar.png">
+      <PackagePath>Assets\Sprites\spacebar.png</PackagePath>
+      <Modified>2015-12-12T03:22:39.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spacedust1.jpg">
       <PackagePath>Assets\Sprites\spacedust1.jpg</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.314</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spaceinvaders.jpg">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\spaceinvaders.jpg">
       <PackagePath>Assets\Sprites\spaceinvaders.jpg</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Sprites\uparrow.png">
+      <PackagePath>Assets\Sprites\uparrow.png</PackagePath>
+      <Modified>2015-12-12T03:22:39.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:12.000</Modified>
+      <Modified>2015-12-12T03:10:55.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:14.000</Modified>
+      <Modified>2015-12-12T03:10:55.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:16.000</Modified>
+      <Modified>2015-12-12T03:10:55.381</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.392</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:18.000</Modified>
+      <Modified>2015-12-12T03:10:55.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:24.000</Modified>
+      <Modified>2015-12-12T03:10:55.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-125.png">
       <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:26.000</Modified>
+      <Modified>2015-12-12T03:10:55.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-150.png">
       <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:28.000</Modified>
+      <Modified>2015-12-12T03:10:55.435</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:30.000</Modified>
+      <Modified>2015-12-12T03:10:55.446</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:32.000</Modified>
+      <Modified>2015-12-12T03:10:55.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:38.000</Modified>
+      <Modified>2015-12-12T03:10:55.467</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:38.000</Modified>
+      <Modified>2015-12-12T03:10:55.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:40.000</Modified>
+      <Modified>2015-12-12T03:10:55.498</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.515</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:50.000</Modified>
+      <Modified>2015-12-12T03:10:55.533</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:44.000</Modified>
+      <Modified>2015-12-12T03:10:55.551</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:50.000</Modified>
+      <Modified>2015-12-12T03:10:55.578</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:54.000</Modified>
+      <Modified>2015-12-12T03:10:55.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:09:58.000</Modified>
+      <Modified>2015-12-12T03:10:55.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-125.png">
       <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:00.000</Modified>
+      <Modified>2015-12-12T03:10:55.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-150.png">
       <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-200.png">
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:04.000</Modified>
+      <Modified>2015-12-12T03:10:55.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:04.000</Modified>
+      <Modified>2015-12-12T03:10:55.631</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:43.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:10.000</Modified>
+      <Modified>2015-12-12T03:10:55.639</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:12.000</Modified>
+      <Modified>2015-12-12T03:10:55.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:14.000</Modified>
+      <Modified>2015-12-12T03:10:55.656</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:16.000</Modified>
+      <Modified>2015-12-12T03:10:55.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:16.000</Modified>
+      <Modified>2015-12-12T03:10:55.672</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:20.000</Modified>
+      <Modified>2015-12-12T03:10:55.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:22.000</Modified>
+      <Modified>2015-12-12T03:10:55.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:24.000</Modified>
+      <Modified>2015-12-12T03:10:55.697</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.704</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-08T21:10:28.000</Modified>
+      <Modified>2015-12-12T03:10:55.714</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.651</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\entrypoint\Space Invaders.exe">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\entrypoint\Space Invaders.exe">
       <PackagePath>entrypoint\Space Invaders.exe</PackagePath>
-      <Modified>2015-12-12T02:26:55.249</Modified>
+      <Modified>2015-12-14T01:46:27.089</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Fonts\space_invaders.ttf">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Fonts\space_invaders.ttf">
       <PackagePath>Fonts\space_invaders.ttf</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.788</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.685</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.PersistenceChannel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.ApplicationInsights.PersistenceChannel.dll">
       <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.722</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.828</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.395</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-12T02:26:55.590</Modified>
+      <Modified>2015-12-14T01:46:27.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Space Invaders.exe">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Space Invaders.exe">
       <PackagePath>Space Invaders.exe</PackagePath>
-      <Modified>2015-12-12T02:26:56.156</Modified>
+      <Modified>2015-12-14T01:46:27.981</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\Space Invaders.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\Space Invaders.xr.xml">
       <PackagePath>Space Invaders.xr.xml</PackagePath>
-      <Modified>2015-12-12T01:51:41.436</Modified>
+      <Modified>2015-12-14T01:45:10.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.AppContext.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:51.974</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.007</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Collections.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.076</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Collections.Specialized.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.109</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.182</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.DataAnnotations.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.261</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.236</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.283</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Data.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.StackTrace.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.dll">
       <PackagePath>System.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.183</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.496</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.519</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Globalization.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.574</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.553</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.Compression.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.639</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.FileSystem.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.701</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
       <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Linq.dll">
       <PackagePath>System.Linq.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Linq.Expressions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Linq.Expressions.dll">
       <PackagePath>System.Linq.Expressions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.836</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Linq.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Linq.Parallel.dll">
       <PackagePath>System.Linq.Parallel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.873</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Linq.Queryable.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Linq.Queryable.dll">
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:52.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.045</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
       <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.001</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.073</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.103</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.Requests.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.Requests.dll">
       <PackagePath>System.Net.Requests.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.Sockets.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.161</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
       <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Numerics.Vectors.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Numerics.Vectors.dll">
       <PackagePath>System.Numerics.Vectors.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Numerics.Vectors.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Numerics.Vectors.WindowsRuntime.dll">
       <PackagePath>System.Numerics.Vectors.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.259</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ObjectModel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ObjectModel.dll">
       <PackagePath>System.ObjectModel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Private.Networking.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Private.Networking.dll">
       <PackagePath>System.Private.Networking.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.467</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
       <PackagePath>System.Private.ServiceModel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.594</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Private.Uri.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.637</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Context.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Context.dll">
       <PackagePath>System.Reflection.Context.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.666</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
       <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.905</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.dll">
       <PackagePath>System.Reflection.Emit.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.763</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
       <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.740</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.786</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Metadata.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.827</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.850</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.883</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Handles.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:53.994</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.193</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.117</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.148</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
       <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
       <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
       <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Security.Claims.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Security.Claims.dll">
       <PackagePath>System.Security.Claims.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Security.Principal.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.dll">
       <PackagePath>System.ServiceModel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.575</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
       <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.395</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
       <PackagePath>System.ServiceModel.Http.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
       <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.456</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
       <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.486</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
       <PackagePath>System.ServiceModel.Security.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.516</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Web.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.553</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
       <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.664</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.642</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.705</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.Overlapped.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.Dataflow.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.853</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
       <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Threading.Timer.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:54.957</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
       <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.001</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.023</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.XDocument.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.098</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:55.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Gabriel\Downloads\Space-Invaders-Mobile-Matt-s-Build\Space Invaders\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
+    <AppxPackagedFile Include="C:\Users\Matt\Desktop\Space-Invaders-Mobile-master\Space Invaders\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2015-12-10T19:50:02.000</Modified>
+      <Modified>2015-12-12T03:10:56.489</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -18,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace Space_Invaders
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    ///Mainpage, Handles navigation
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -27,20 +28,22 @@ namespace Space_Invaders
             this.InitializeComponent();
         }
 
+        //Handle high score button clicks
         private void highScoreBtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(HighScores));
         }
 
+        //Handle settings butten click
         private void settingsBtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Settings));
         }
 
+        //Handle play game button click
         private void playBtn_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(GamePage));
         }
-    }
-    
+    } 
 }
